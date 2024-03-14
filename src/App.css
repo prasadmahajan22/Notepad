@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.App{
+  width: 100%;
+  height: 100vh;
+}
+.empty{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.empty h2{
+  color: rgb(8, 8, 8);
+  font-size: 53px;
+  padding-bottom: 2rem;
+}
+
+.empty-btn{
+  background-color: red;
+  
+  padding: 20px;
+  
+}
+.sp{
+  padding-left:4px;
+}
+.empty-btn {
+  font-weight: bold;
+  color: white;
+  
+  cursor: pointer;
+  width: 173.02px;
+  height: 42.66px;
+  border: none;
+  background-color: #3653f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-btn .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+.empty-btn:hover .span-mother {
+  position: absolute;
+}
+
+.empty-btn:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+.empty-btn .span-mother span:nth-child(1) {
+  transition: 0.2s;
+}
+
+.empty-btn .span-mother span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.empty-btn .span-mother span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.empty-btn .span-mother span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.empty-btn .span-mother span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.empty-btn .span-mother span:nth-child(6) {
+  transition: 0.7s;
+}
+
+.empty-btn .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.empty-btn .span-mother2 span {
+  transform: translateY(-1.2em);
+}
+
+.empty-btn:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+.empty-btn .span-mother2 span {
+  transition: 0.2s;
+}
+
+.empty-btn .span-mother2 span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.empty-btn .span-mother2 span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.empty-btn .span-mother2 span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.empty-btn .span-mother2 span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.empty-btn .span-mother2 span:nth-child(6) {
+  transition: 0.7s;
+}
+
+
+.main{
+width: 100%;
+min-height: 100vh;
+display: flex;
+}
+
+
+/********  Left *****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************/
+
+.left{
+width: 20%;
+border-right: 1px solid gray;
+}
+
+.left-items-box{
+  padding-top: 20px;
+}
+.plus{
+  background-color: #3C91E6;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.left-head{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.left-head h1{
+
+}
+
+.left-head button{
+  
+}
+.delete-icon{
+  cursor: pointer;
+  color: rgb(10, 0, 0);
+  z-index: 10;
+  padding: 10px;
+  cursor: pointer;
+}
+.left-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3C91E6;
+  border-bottom: 1px solid black;
+  word-wrap: break-word;
+ 
+}
+.left-items p{
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  height:100%;
+  width: 80%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/********  Right ********
+****************
+********
+********
+********
+********
+********
+********
+********
+****************/
+header{
+  display: flex;
+  gap: 35px;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+header ul{
+  display: flex;
+  gap: 12px;
+}
+header li{
+ 
+}
+.right{
+  width: 80%;
+}
+
+.svg-icon{
+  font-size: 14px;
+  height: 1em;
+  width: 1em;
+}
+button{
+  border: navajowhite;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+
+  
+}
+
+.right-textarea{
+  height: calc(100vh - 40px);
+  width: 100%;
+}
+textarea{
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+}
+
+
+.right-textarea::first-line{
+
+}
+
+/*********************   Media-query   
+
+ ***************************/
+
+
+ @media screen and (max-width:768px){
+  .main{
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  .left{
+    width: 100%;
+    border-right:none;
+
+  }
+
+  .right{
+    width: 100%;
+  }
+  header{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+ }
